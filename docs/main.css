@@ -7,9 +7,10 @@ body {
   --color-one: #583c87;
   --color-two: #e45a84;
   --color-three: #ffacac;
+  --color-signal: rgb(0, 170, 255);
   font-size: 16px;
-  --column-left: 15%;
-  --column-width: 80%;
+  --column-left: 7%;
+  --column-width: 89%;
   line-height: 1.6;
   hyphens: auto;
 }
@@ -36,26 +37,22 @@ body {
   --color-two: #5ae4e486;
   --color-three: rgb(255, 166, 0);
 
-  font-family: "Noto Emoji", "Work Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 400; /* normal */
 }
 
-h4 {
-  color: white;
-  font-size: 1.5rem;
-  text-align: center;
+p {
+  margin-top: 0;
+  margin-bottom: 0.7em;
 }
 
-.logo {
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
-  border-radius: 2em;
-  border: 0.4em solid white;
-  padding-left: 0.8em;
-  padding-right: 0.6em;
-  font-family: "IBM Plex Mono";
-
-  font-weight: 700;
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0.9em;
+  margin-bottom: 0.4em;
+  line-height: 1.3;
 }
 
 h1 {
@@ -77,6 +74,59 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 1em;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  font-family: "IBM Plex Mono";
+
+  font-weight: 700;
+  margin-top: 6em;
+  margin-bottom: 2em;
+}
+
+h3 {
+  font-family: "IBM Plex Mono";
+  font-weight: 400;
+  font-style: italic;
+  border-left: 0.3em solid var(--color-signal);
+  font-size: 2rem;
+  padding-left: 0.3em;
+  padding-right: 2em;
+  hyphens: none;
+  margin-top: 1.3em;
+  color: var(--color-three);
+}
+
+p {
+  padding-left: 1.5em;
+}
+
+@media (min-width: 768px) {
+  p {
+    padding-left: 4em;
+  }
+}
+
+h4 {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  hyphens: none;
+}
+
+.logo {
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  border-radius: 2em;
+  border: 0.4em solid white;
+  padding-left: 0.8em;
+  padding-right: 0.6em;
+  font-family: "IBM Plex Mono";
+
+  font-weight: 700;
+}
+
 .background {
   position: fixed;
   width: 100%;
@@ -90,7 +140,6 @@ h1 {
 
 .content {
   color: #fff;
-  /* position: relative;*/
   left: 0%;
   top: 0;
   width: 100%;
@@ -101,17 +150,6 @@ h1 {
   margin-left: var(--column-left);
 }
 
-/* .content::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 35%;
-    width: 30%;
-    height: 100%;
-    z-index: -1;
-    backdrop-filter: blur(2vw);
-    -webkit-backdrop-filter: blur(2vw);
-  } */
 .background::after {
   content: "";
   position: absolute;
@@ -120,7 +158,6 @@ h1 {
   width: 100%;
   height: 100%;
 
-  /* --color-bg: red; */
   background-image: linear-gradient(
     to right,
     transparent 0,
@@ -128,5 +165,40 @@ h1 {
     var(--color-bg) calc(var(--column-left) + var(--column-width)),
     transparent 100%
   );
-  opacity: 0.6;
+  opacity: 0.7;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.7em; /* same as p */
+}
+
+a {
+  color: var(--color-three);
+
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.15em;
+  text-underline-offset: 0.3em;
+}
+a:hover {
+  color: var(--color-signal);
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+.impressum {
+  padding-top: 6em;
+  padding-bottom: 3em;
 }
