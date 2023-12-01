@@ -1,0 +1,23 @@
+{
+  "name": "newnion.website",
+  "version": "1.0.0",
+  "description": "https://codepen.io/Mamboleoo/pen/BxMQYQ",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "style:bg": "node-sass --output-style='expanded' src/background.scss docs/background.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-scss": "node-sass --output-style='expanded' --watch src/background.scss docs/background.css",
+    "serve": "browser-sync start --server 'docs' --files 'docs/*.html, docs/*.css'",
+    "start": "npm run watch-scss & npm run serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "node-sass": "^9.0.0"
+  }
+}
