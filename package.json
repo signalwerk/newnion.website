@@ -1,23 +1,18 @@
 {
   "name": "newnion.website",
+  "private": true,
   "version": "1.0.0",
-  "description": "https://codepen.io/Mamboleoo/pen/BxMQYQ",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "description": "",
   "scripts": {
-    "style:bg": "node-sass --output-style='expanded' src/background.scss docs/background.css",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-scss": "node-sass --output-style='expanded' --watch src/background.scss docs/background.css",
-    "serve": "browser-sync start --server 'docs' --files 'docs/*.html, docs/*.css'",
-    "start": "npm run watch-scss & npm run serve"
+    "dev": "npm run dev --workspace signalwerk.documentation.md",
+    "admin": "npm run admin --workspace signalwerk.documentation.md",
+    "build": "npm run build --workspace signalwerk.documentation.md"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.29.3",
-    "node-sass": "^9.0.0"
-  }
+  "workspaces": [
+    "packages/signalwerk.documentation.md"
+  ],
+  "type": "module"
 }
