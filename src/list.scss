@@ -1,0 +1,17 @@
+ul,
+ol {
+  padding-left: 1em;
+  padding-left: 0;
+  margin: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  list-style-position: outside;
+}
+
+li {
+  margin-bottom: 0.7em; /* same as p */
+}
+
+ul > li::marker {
+  content: "–\00A0";
+}
