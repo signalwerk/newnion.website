@@ -1,12 +1,12 @@
-# backend:
-#   name: github
-#   repo: signalwerk/newnion.website
-#   base_url: https://auth.signalwerk.workers.dev
-#   branch: main
-
 backend:
-  name: git-gateway
-local_backend: true
+  name: github
+  repo: signalwerk/newnion.website
+  base_url: https://auth.signalwerk.workers.dev
+  branch: main
+
+# backend:
+#   name: git-gateway
+# local_backend: true
 
 site_url: "https://newnion.org/"
 media_folder: /public/assets/media
