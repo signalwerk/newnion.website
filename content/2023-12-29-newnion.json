@@ -6,6 +6,16 @@
   "children": [
     {
       "type": "box",
+      "preset": "footer",
+      "children": [
+        {
+          "type": "text",
+          "body": "[Home](/) · Verein"
+        }
+      ]
+    },
+    {
+      "type": "box",
       "preset": "header",
       "children": [
         {
