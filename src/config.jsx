@@ -31,8 +31,8 @@ function page(node, { Helmet, processor }) {
         <span></span>
       </div>
 
-      <h4>
-        <span className="logo">Newnion</span>
+      <h4 calss="logo">
+        <span className="logo__inner">Newnion</span>
       </h4>
 
       <div className="content">

@@ -120,7 +120,7 @@ h3 {
   hyphens: none;
   margin-top: 1.3em;
   color: var(--color-three);
-  
+
   strong {
     color: white;
   }
@@ -133,6 +133,10 @@ h4 {
 }
 
 .logo {
+  text-align: center;
+}
+
+.logo__inner {
   letter-spacing: 0.4em;
   text-transform: uppercase;
   border-radius: 2em;
