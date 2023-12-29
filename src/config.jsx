@@ -31,9 +31,13 @@ function page(node, { Helmet, processor }) {
         <span></span>
       </div>
 
-      <h4 className="logo">
-        <span className="logo__inner">Newnion</span>
-      </h4>
+      <div className="header">
+        <div className="header__logo">
+          <div className="logo">
+            <div className="logo__inner">Newnion</div>
+          </div>
+        </div>
+      </div>
 
       <div className="content">
         <div className={`node-page ${node.class || ""}`}>
