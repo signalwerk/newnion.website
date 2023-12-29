@@ -192,7 +192,7 @@ box: &box
     - label: Type
       name: preset
       widget: select
-      options: ["default", "header", "footer"]
+      options: ["default", "header", "footer", "navigation"]
       default: "default"
     - label: Class
       name: class
