@@ -18,7 +18,7 @@
       href="https://fonts.signalwerk.ch/css/latest/family=IBM+Plex+Mono:ital,wght@0,400..700;1,400..700.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/style.css?bust=7b6a13" />
+    <link rel="stylesheet" href="/style.css?bust=64106a" />
   </head>
   <body>
     <div id="app">
@@ -39,47 +39,17 @@
             <div class="text">
               <style>
                 .logo-background {
-                  all: initial;
-                  background-color: var(--color-bg);
-                  background-color: red;
-                  display: inline-block;
-                  font-size: 1.5rem;
-                }
-                .logo-mini {
-                  padding: 0.25em;
-                }
-                .logo-mini__inner {
-                  color: white;
-                  letter-spacing: 0.4em;
-                  text-transform: uppercase;
-                  border: 0.4em solid #fff;
-                  border-radius: 1.3em;
-                  padding-left: 0.8em;
-                  padding-right: 0.4em;
-                  font-family: IBM Plex Mono;
-                  font-weight: 700;
-
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-
-                  height: 1.3em;
-                }
-                .logo-mini--short .logo-mini__inner {
-                  letter-spacing: 0;
-                  width: 1.3em;
-                  padding-left: 0;
-                  padding-right: 0;
+                  font-size: 4rem;
                 }
               </style>
               <div class="logo-background">
-                <div class="logo-mini">
-                  <div class="logo-mini__inner">Newnion</div>
+                <div className="logo">
+                  <div className="logo__inner">Newnion</div>
                 </div>
               </div>
               <div class="logo-background">
-                <div class="logo-mini logo-mini--short">
-                  <div class="logo-mini__inner">N</div>
+                <div className="logo logo--short">
+                  <div className="logo__inner">N</div>
                 </div>
               </div>
             </div>
