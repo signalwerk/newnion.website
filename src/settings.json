@@ -13,5 +13,19 @@
     "html": {
       "lang": "de"
     }
-  }
+  },
+  "menus": [
+    {
+      "menu": {
+        "title": "main",
+        "ref_page": {
+          "selectionType": "selection",
+          "pages": [
+            "/",
+            "/about-us/"
+          ]
+        }
+      }
+    }
+  ]
 }
