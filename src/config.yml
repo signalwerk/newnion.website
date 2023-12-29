@@ -9,6 +9,7 @@ backend:
 # local_backend: true
 
 site_url: "https://newnion.org/"
+show_preview_links: false
 media_folder: /public/assets/media
 # media_library:
 #   name: uploadcare
@@ -187,6 +188,7 @@ box: &box
         - *text
         - *image
       required: false
+      collapsed: false
     - label: Type
       name: preset
       widget: select
@@ -254,18 +256,28 @@ collections:
         widget: string
       - label: Path
         name: path
-        widget: string
+        widget: pathpreview
+        images:
+          - 
+            url: https://github.com/signalwerk/newnion.website/actions/workflows/gh-pages.yml
+            img: https://github.com/signalwerk/newnion.website/actions/workflows/gh-pages.yml/badge.svg
+          - 
+            url: https://github.com/signalwerk/newnion.website/actions/workflows/pages/pages-build-deployment
+            img: https://github.com/signalwerk/newnion.website/actions/workflows/pages/pages-build-deployment/badge.svg
+
         # required: false
       - label: Draft
         name: draft
         widget: boolean
         default: false
-      - label: Publish Date
+      - label: Date
         name: date
         widget: datetime
-        date_format: yyyy-MM-dd
-        time_format: "HH:mm"
-        format: "yyyy-MM-dd'T'HH:mm:ss.SSSXXX"
+        date_format: "DD.MM.YYYY" # e.g. 24.12.2021
+        time_format: "HH:mm" # e.g. 21:07
+        format: "YYYY-MM-DDTHH:mm:ss.sssZ"
+
+        # format: "yyyy-MM-dd'T'HH:mm:ss.SSSXXX"
       - label: Cover Image
         name: image
         widget: image
