@@ -6,7 +6,7 @@
   "children": [
     {
       "type": "box",
-      "preset": "footer",
+      "preset": "navigation",
       "children": [
         {
           "type": "text",
