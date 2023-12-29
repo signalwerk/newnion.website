@@ -31,7 +31,7 @@ function page(node, { Helmet, processor }) {
         <span></span>
       </div>
 
-      <h4 calss="logo">
+      <h4 className="logo">
         <span className="logo__inner">Newnion</span>
       </h4>
 
