@@ -6,7 +6,7 @@
   "children": [
     {
       "type": "text",
-      "body": "<style>\n  .logo-background {\n    background-color: var(--color-bg);\n    display: inline-block;\n    font-size: 1.5rem;\n    text-align: center;\n  }\n</style>\n<div class=\"logo-background\">\n  <div className=\"logo\">\n    <div className=\"logo__inner\">Newnion</div>\n  </div>\n</div>\n<div class=\"logo-background\">\n  <div className=\"logo logo--short\">\n    <div className=\"logo__inner\">N</div>\n  </div>\n</div>\n"
+      "body": "<style>\n  .logo-background {\n    background-color: var(--color-bg);\n    display: inline-block;\n    font-size: 3rem;\n    text-align: center;\n  }\n</style>\n\n### Regular Logo\n\n<div class=\"logo-background\">\n  <div class=\"logo\">\n    <div class=\"logo__inner\">Newnion</div>\n  </div>\n</div>\n\n\n### Short Logo\n\n<div class=\"logo-background\">\n  <div class=\"logo logo--short\">\n    <div class=\"logo__inner\">N</div>\n  </div>\n</div>\n"
     }
   ]
 }
