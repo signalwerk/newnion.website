@@ -6,7 +6,7 @@
   "children": [
     {
       "type": "text",
-      "body": "\n<style>\n.logo-background{\nall: initial;\n background-color: var(--color-bg);\n background-color: red;\n display: inline-block;\n  font-size: 1.5rem;\n}\n.logo-mini{\npadding: .25em;\n}\n.logo-mini__inner{\ncolor: white;\n    letter-spacing: .4em;\n    text-transform: uppercase;\n    border: 0.4em solid #fff;\n    border-radius: 1.3em;\n    padding-left: 0.8em;\n    padding-right: 0.4em;\n    font-family: IBM Plex Mono;\n    font-weight: 700;\n\n display: flex;\n align-items: center;\n justify-content: center;\n\nheight: 1.3em;\n}\n.logo-mini--short .logo-mini__inner{\n\n    letter-spacing: 0;\nwidth: 1.3em;\n   padding-left: 0;\n    padding-right: 0;\n}\n</style>\n<div class=\"logo-background\">\n<div class=\"logo-mini\">\n<div class=\"logo-mini__inner\">\nNewnion\n</div>\n</div>\n</div>\n<div class=\"logo-background\">\n<div class=\"logo-mini logo-mini--short\">\n<div class=\"logo-mini__inner\">\nN\n</div>\n</div>\n</div>"
+      "body": "<style>\n  .logo-background {\n    background-color: var(--color-bg);\n    display: inline-block;\n    font-size: 1.5rem;\n    text-align: center;\n  }\n</style>\n<div class=\"logo-background\">\n  <div className=\"logo\">\n    <div className=\"logo__inner\">Newnion</div>\n  </div>\n</div>\n<div class=\"logo-background\">\n  <div className=\"logo logo--short\">\n    <div className=\"logo__inner\">N</div>\n  </div>\n</div>\n"
     }
   ]
 }
