@@ -6,6 +6,16 @@
   "children": [
     {
       "type": "box",
+      "preset": "footer",
+      "children": [
+        {
+          "type": "text",
+          "body": "\n\nHome · [Verein](/about-us/)"
+        }
+      ]
+    },
+    {
+      "type": "box",
       "preset": "header",
       "children": [
         {
@@ -21,17 +31,11 @@
     },
     {
       "type": "text",
-      "body": "## Newnion?\n\nWir sind eine Gemeinschaft von teils selbstständigen Individuen, die an ein modernes Arbeiten glauben. Unser Zusammenschluss steht für Agilität und transparente Prozesse in einer Welt, die wir mitgestalten. Wir sind überzeugt davon, dass kontinuierliches und nachhaltiges Agieren unabdingbar ist.\n\nUnser Ziel ist es, eine Arbeitskultur zu fördern, die Diversität und Gleichberechtigung hochhält und dabei den Schutz des Individuums nicht aus den Augen verliert. Dies sowohl innerhalb von Organisationseinheiten als auch übergreifend.\n\nDer Mensch steht dabei im Mittelpunkt. Wir glauben daran, dass Arbeits- und Privatleben miteinander in Verbindung stehen und ausgewogen sein sollen.\n\nUnser Zusammenschluss ist eine Organisation, bei der demokratische Beteiligung und kollektive Problemlösung gepflegt wird, um einzelnen Personen unsere Unterstützung zu geben."
+      "body": "\n\n## [Komm in die Signal Gruppe](https://signal.group/#CjQKIOEH8ZuKm9Du9h5jLafPmJP6QXvYA7SEOHsk8EzIO8ZeEhCSi0BXrV3_8pq5xkyjrull)"
     },
     {
-      "type": "box",
-      "preset": "footer",
-      "children": [
-        {
-          "type": "text",
-          "body": "### Impressum\n\n[Stefan Huber](https://signalwerk.ch/) und [Matthias Schwyn](https://weisspunkt.ch/kommunikationsagentur-schaffhausen.php/)"
-        }
-      ]
+      "type": "text",
+      "body": "## Newnion?\n\nWir sind eine Gemeinschaft von teils selbstständigen Individuen, die an ein modernes Arbeiten glauben. Unser Zusammenschluss steht für Agilität und transparente Prozesse in einer Welt, die wir mitgestalten. Wir sind überzeugt davon, dass kontinuierliches und nachhaltiges Agieren unabdingbar ist.\n\nUnser Ziel ist es, eine Arbeitskultur zu fördern, die Diversität und Gleichberechtigung hochhält und dabei den Schutz des Individuums nicht aus den Augen verliert. Dies sowohl innerhalb von Organisationseinheiten als auch übergreifend.\n\nDer Mensch steht dabei im Mittelpunkt. Wir glauben daran, dass Arbeits- und Privatleben miteinander in Verbindung stehen und ausgewogen sein sollen.\n\nUnser Zusammenschluss ist eine Organisation, bei der demokratische Beteiligung und kollektive Problemlösung gepflegt wird, um einzelnen Personen unsere Unterstützung zu geben."
     }
   ],
   "description": "Eintreten für nachhaltige und faire Arbeitsprozesse"
