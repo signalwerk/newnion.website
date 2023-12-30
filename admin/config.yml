@@ -91,30 +91,30 @@ types:
         widget: string
         required: false
 
-  # refPage: &refPage
-  #   label: Page reference
-  #   name: ref_page
-  #   widget: object
-  #   fields:
-  #     - name: selectionType
-  #       label: Type
-  #       widget: select
-  #       options:
-  #         - value: all
-  #           label: All
-  #         - value: selection
-  #           label: Selection
-  #     - label: "Selection"
-  #       name: "pages"
-  #       widget: "relation"
-  #       multiple: true
-  #       collection: "pages"
-  #       search_fields: ["title", "path"]
-  #       display_fields: ["title", "· {{path}}"]
-  #       value_field: "path"
-  #       condition:
-  #         field: selectionType
-  #         value: selection
+  refPage: &refPage
+    label: Page reference
+    name: ref_page
+    widget: object
+    fields:
+      - name: selectionType
+        label: Type
+        widget: select
+        options:
+          - value: all
+            label: All
+          - value: selection
+            label: Selection
+      - label: "Selection"
+        name: "pages"
+        widget: "relation"
+        multiple: true
+        collection: "pages"
+        search_fields: ["title", "path"]
+        display_fields: ["title", "· {{path}}"]
+        value_field: "path"
+        condition:
+          field: selectionType
+          value: selection
 
 grid: &grid
   label: Grid
@@ -307,6 +307,21 @@ collections:
         label: Settings
         file: src/settings.json
         fields:
+          - label: Menus
+            name: menus
+            widget: list
+            required: false
+            collapsed: false
+            fields:
+              - label: Menu
+                name: menu
+                widget: object
+                required: false
+                fields:
+                  - label: Title
+                    name: title
+                    widget: string
+                  - *refPage
           - label: Page
             name: page
             widget: object
