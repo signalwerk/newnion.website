@@ -7,12 +7,7 @@
     {
       "type": "box",
       "preset": "navigation",
-      "children": [
-        {
-          "type": "text",
-          "body": "[Home](/) · Verein"
-        }
-      ]
+      "children": []
     },
     {
       "type": "box",
