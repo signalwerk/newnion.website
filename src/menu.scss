@@ -1,0 +1,26 @@
+.menu {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  column-gap: 1em;
+}
+
+.menu__item {
+  padding-left: 0;
+  margin-bottom: 0;
+
+  &:before {
+    content: none;
+  }
+}
+.menu__item--active {
+  a {
+    color: var(--color-signal);
+    text-decoration-color: var(--color-signal);
+
+    &:hover {
+      color: var(--color-signal);
+    }
+  }
+}
