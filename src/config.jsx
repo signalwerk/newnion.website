@@ -1,66 +1,8 @@
 import React from "react";
-
-// check abstraction
-const isActive = (item, path) => item.path === path;
-
-// set an 'active' key on each object if
-// a child is active
-const setActive = (menu, path) => {
-  // the returned menu
-  let newMenu = {
-    ...menu,
-  };
-  // is this menu active
-  let subActive = false;
-
-  // children check
-  if (menu.children) {
-    newMenu.children = [];
-    menu.children.forEach((item) => {
-      let { active, menu } = setActive(item, path);
-      if (active) {
-        subActive = true;
-      }
-      newMenu.children.push(menu);
-    });
-  }
-
-  // if one of the children is active or the item itself
-  newMenu.active = subActive || isActive(menu, path);
-
-  // return
-  return {
-    active: newMenu.active,
-    menu: newMenu,
-  };
-};
-
-function menu(items, { level } = { level: 0 }) {
-  if (!items) return null;
-  return (
-    <ul className={`menu menu--level-${level}`}>
-      {items.map((item) => {
-        return (
-          <li
-            className={`menu__item menu__item--${
-              item.active ? "active" : "not-active"
-            }`}
-          >
-            <a href={item.path} className="menu__item-link">
-              <span className="menu__item-inner">{item.label}</span>
-            </a>
-          </li>
-        );
-      })}
-    </ul>
-  );
-}
+import { PageMenu } from "../packages/signalwerk.documentation.md/src/components/helpers/PageMenu/";
 
 function page(node, { Helmet, processor }) {
   if (!node) return null;
-
-  const menuData =
-    setActive({ children: node?.menus?.main?.items }, node.path || "/") || null;
 
   return (
     <>
@@ -93,13 +35,15 @@ function page(node, { Helmet, processor }) {
 
       <div className="header">
         <div className="header__logo">
-          <div className="logo">
-            <div className="logo__inner">Newnion</div>
-          </div>
+          <a href="/" className="logo__link">
+            <div className="logo">
+              <div className="logo__inner">Newnion</div>
+            </div>
+          </a>
         </div>
-        {menuData?.menu?.children && (
-          <div className="header__menu">{menu(menuData?.menu?.children)}</div>
-        )}
+        <div className="header__menu">
+          <PageMenu page={node} name="main" />
+        </div>
       </div>
 
       <div className="content">
