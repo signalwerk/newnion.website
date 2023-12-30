@@ -7,12 +7,7 @@
     {
       "type": "box",
       "preset": "navigation",
-      "children": [
-        {
-          "type": "text",
-          "body": "\n\nHome · [Verein](/about-us/)"
-        }
-      ]
+      "children": []
     },
     {
       "type": "box",
