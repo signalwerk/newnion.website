@@ -14,6 +14,7 @@ body {
 :root {
   font-size: 16px;
   --text-indent: 1.5rem;
+  
   --column-left: calc(7% + var(--text-indent));
   --column-width: calc(89% - var(--text-indent));
   line-height: 1.6;
