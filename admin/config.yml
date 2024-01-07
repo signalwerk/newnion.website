@@ -1,12 +1,12 @@
-# backend:
-#   name: github
-#   repo: signalwerk/newnion.website
-#   base_url: https://auth.signalwerk.workers.dev
-#   branch: main
-
 backend:
-  name: git-gateway
-local_backend: true
+  name: github
+  repo: signalwerk/newnion.website
+  base_url: https://auth.signalwerk.workers.dev
+  branch: main
+
+# backend:
+#   name: git-gateway
+# local_backend: true
 
 site_url: "https://newnion.org/"
 show_preview_links: false
@@ -194,7 +194,13 @@ box: &box
     - label: Type
       name: preset
       widget: select
-      options: ["default", "header", "footer"]
+      options:
+        - value: default
+          label: Default
+        - value: header
+          label: Header
+        - value: footer
+          label: Footer
       default: "default"
     - label: Class
       name: class
